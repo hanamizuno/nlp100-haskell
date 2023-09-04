@@ -1,0 +1,21 @@
+{
+    "name": "Ubuntu",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "args": {
+        "VARIANT": "ubuntu-22.04"
+      }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "haskell.haskell"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+  }
+  
